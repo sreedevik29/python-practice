@@ -146,6 +146,12 @@
 # 		sys.exit()
 # 	print("You typed " + response + ".")
 
+# A Loop or If statement (conditionals) ONLY runs if the
+# condition is True
+
+# number = input("GIVE A NUMBER: ")
+# while number > 1:
+
 # Functions
 # def hello(name):
 # 	print("Hello " + name)
