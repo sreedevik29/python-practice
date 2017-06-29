@@ -2,33 +2,49 @@ from random import *
 
 def hangman():
 	print("I am thinking of an 8 letter word in NICKNAMES")
-	print("Guess a letter!")
-	user_input1 = raw_input()
-	user_input2 = raw_input()
-	user_input3 = raw_input()
-	user_input4 = raw_input()
-	user_input5 = raw_input()
-	user_input6 = raw_input()
-	user_input7 = raw_input()
+	active = True
+	word = "honeybun"
 
-	if user_input1, user_input2, user_input3, user_input4, user_input5, user_input6, user_input7, user_input8 == "h":
-		print("You guessed a correct letter!")
-	elif user_input1, user_input2, user_input3, user_input4, user_input5, user_input6, user_input7, user_input8 == "o":
-		print("You guessed a correct letter!")		
-	elif user_input1, user_input2, user_input3, user_input4, user_input5, user_input6, user_input7, user_input8 == "n":
-		print("You guessed a correct letter!")		
-	elif user_input1, user_input2, user_input3, user_input4, user_input5, user_input6, user_input7, user_input8 == "e":
-		print("You guessed a correct letter!")		
-	elif user_input1, user_input2, user_input3, user_input4, user_input5, user_input6, user_input7, user_input8 == "y":
-		print("You guessed a correct letter!")		
-	elif user_input1, user_input2, user_input3, user_input4, user_input5, user_input6, user_input7, user_input8 == "b":
-		print("You guessed a correct letter!")		
-	elif user_input1, user_input2, user_input3, user_input4, user_input5, user_input6, user_input7, user_input8 == "u":
-		print("You guessed a correct letter!")		
-	elif user_input1, user_input2, user_input3, user_input4, user_input5, user_input6, user_input7, user_input8 == "n":
-		print("You guessed a correct letter!")		
-	else:
-		print("That's not the right letter!")	
+	while active:
+		user_input = raw_input("Guess the letter: ")
+		if user_input == "h": 
+			print("You guessed a correct letter!")
+			user_input = raw_input("Guess another letter!")
+		elif user_input == "o":
+			print("You guessed a correct letter!")
+			user_input = raw_input("Guess another letter: ")
+		elif user_input == "n":
+			print("You guessed a correct letter!")
+			user_input = raw_input("Guess another letter: ")
+		elif user_input == "e":
+			print("You guessed a correct letter!")
+			user_input = raw_input("Guess another letter: ")
+		elif user_input == "y":
+			print("You guessed a correct letter!")
+			user_input = raw_input("Guess another letter: ")
+		elif user_input == "b":
+			print("You guessed a correct letter!")
+			user_input = raw_input("Guess another letter: ")
+		elif user_input == "u":
+			print("You guessed a correct letter!")
+			user_input = raw_input("Guess another letter: ")
+		elif user_input == "n":
+			print("You guessed a correct letter: ")
+			active = False
+
+	print("Game is over")
+	# user_input = raw_input("Guess a letter!")
+
+# 	def game_logic():
+# 		if user_input == "h" or user_input == "o" or user_input == "n" or user_input == "e" or user_input == "y" or user_input == "b" or user_input == "u" or user_input == "n":
+# 			print("You guessed the right word!")
+# 		else: 
+# 			print("You guessed the wrong word, guess again")
+
+# 	if game_logic() = True:
+# 		print("You got the word! It was " + honeybun)
+# 	else:
+# 		print("You lost")
 
 def main():
 	hangman()
