@@ -1,50 +1,33 @@
 from random import *
 
 def hangman():
+	# going = True
+
+	# while going:
+	#     prompt = raw_input("Should I keep going? y/n: ")
+	#     if prompt == "y":
+	#         print("Okay ill keep going...")
+	#     else:
+	#         print("Okay ill stop.")
+	#         going = False
+
 	print("I am thinking of an 8 letter word in NICKNAMES")
 	active = True
-	word = "honeybun"
+	word = ["h", "o", "n", "e", "y", "b", "u", "n"]
 
 	while active:
 		user_input = raw_input("Guess the letter: ")
-		if user_input == "h": 
-			print("You guessed a correct letter!")
-			user_input = raw_input("Guess another letter!")
-		elif user_input == "o":
-			print("You guessed a correct letter!")
-			user_input = raw_input("Guess another letter: ")
-		elif user_input == "n":
-			print("You guessed a correct letter!")
-			user_input = raw_input("Guess another letter: ")
-		elif user_input == "e":
-			print("You guessed a correct letter!")
-			user_input = raw_input("Guess another letter: ")
-		elif user_input == "y":
-			print("You guessed a correct letter!")
-			user_input = raw_input("Guess another letter: ")
-		elif user_input == "b":
-			print("You guessed a correct letter!")
-			user_input = raw_input("Guess another letter: ")
-		elif user_input == "u":
-			print("You guessed a correct letter!")
-			user_input = raw_input("Guess another letter: ")
-		elif user_input == "n":
-			print("You guessed a correct letter: ")
+		if user_input in word:
+			print("You guessed the right letter")
+			word.remove(user_input)
+		else: 
+			print("You guessed the wrong letter, try again")
+		if len(word) == 0:
+			print("Congrats you won!")
 			active = False
 
-	print("Game is over")
-	# user_input = raw_input("Guess a letter!")
+	print("Game is over!")
 
-# 	def game_logic():
-# 		if user_input == "h" or user_input == "o" or user_input == "n" or user_input == "e" or user_input == "y" or user_input == "b" or user_input == "u" or user_input == "n":
-# 			print("You guessed the right word!")
-# 		else: 
-# 			print("You guessed the wrong word, guess again")
-
-# 	if game_logic() = True:
-# 		print("You got the word! It was " + honeybun)
-# 	else:
-# 		print("You lost")
 
 def main():
 	hangman()
