@@ -174,13 +174,28 @@
 # print(eggs)
 
 # Handling errors
-def spam(divideBy):
-	try:
-		return 42/divideBy
-	except ZeroDivisionError:
-		print("Error: Invalid Argument.")
-print(spam(2))
-print(spam(12))
-print(spam(0))
-print(spam(1))
+# def spam(divideBy):
+# 	try:
+# 		return 42/divideBy
+# 	except ZeroDivisionError:
+# 		print("Error: Invalid Argument.")
+# print(spam(2))
+# print(spam(12))
+# print(spam(0))
+# print(spam(1))
+
+# loops to enter names
+# catNames = []
+# while True:
+# 	print("Enter the name of cat " + str(len(catNames) + 1) + " (Or enter nothing to stop.): ")
+# 	name = raw_input()
+# 	if name == "":
+# 		break
+# 	catNames = catNames + [name] #list concantenation
+# print("The cat names are: ")
+# for cats in catNames:
+# 	print(cats)
+
+# ranges
+
 
