@@ -11,5 +11,14 @@ def wholeBoard(board):
 
 wholeBoard(theBoard)
 
-
-			
+turn = "X"
+for i in range(9):
+	wholeBoard(theBoard)
+	print("Turn for " + turn + ". Move on which space? ")
+	move = raw_input()
+	theBoard[move] = turn
+	if turn == "X":
+		turn = "O"
+	else:
+		turn = "X"
+wholeBoard(theBoard)			
