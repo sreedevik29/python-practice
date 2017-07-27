@@ -9,8 +9,6 @@ def wholeBoard(board):
 	print("-+-+-")
 	print(board["low-L"] + "|" + board["low-M"] + "|" + board["low-R"])
 
-wholeBoard(theBoard)
-
 turn = "X"
 for i in range(9):
 	wholeBoard(theBoard)
@@ -21,4 +19,13 @@ for i in range(9):
 		turn = "O"
 	else:
 		turn = "X"
+
 wholeBoard(theBoard)			
+
+# def winner():
+# 	if theBoard["top-L"] == "X" and theBoard["top-M"] == "X" and theBoard["top-R"] == "X":
+# 		print("Player X won!")
+# 	else:
+# 		print("No one won. Sorry, try again!")
+
+# winner()
