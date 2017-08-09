@@ -22,3 +22,11 @@ print("415-555-4242 is a phone number: ")
 print(isPhoneNumber('415-555-4242'))
 print("Moshi Moshi is a phone number: ")
 print(isPhoneNumber("Moshi Moshi"))
+
+message = "Call me at 416-709-8199 tomorrow. 416-287-8199 is my home phone. "
+
+for i in range(len(message)):
+	chunk = message[i:i+12]
+	if isPhoneNumber(chunk):
+		print("Phone number found: " + chunk)
+		print("Done")
