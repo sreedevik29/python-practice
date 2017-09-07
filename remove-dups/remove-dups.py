@@ -1,4 +1,5 @@
-
+# a = ["droop", "stoop", "droop", "doop", "loop", "loop", "stoop", "foop"]
+# c = []
 
 # def appendList(lists,newLists):
 # 	for i in lists:
