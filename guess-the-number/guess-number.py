@@ -17,5 +17,3 @@ if guess == secretNumber:
 	print("Good job! You guessed my number correctly! It is " + str(secretNumber) + "!")
 else:
 	print("Nope! The number I was thinking was " + str(secretNumber))
-
-
