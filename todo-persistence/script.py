@@ -10,7 +10,7 @@ def main():
     user_input = raw_input("Press 1 to add a todo or 2 to delete a todo: ")
 
     if user_input == "1":
-        new_todo = raw_input("Enter your new todo: ")
+        new_todo = raw_input("Enter your new todo: ") + "\n"
         # Note that 'r' and 'a' are options for open(...)
         with open("todos.txt", "a") as file_appender:
             file_appender.write("\n" + new_todo)
