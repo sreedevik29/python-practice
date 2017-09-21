@@ -44,7 +44,8 @@ def main():
 
         f = open("todos.txt", "w")
         for line in lines:
-            if line != delete_todo:
+            split_line = line.split(".")
+            if (split_line[0] + "\n") != delete_todo:
                 f.write(line)
         f.close()
 
