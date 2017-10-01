@@ -15,6 +15,11 @@ def get_file_info():
                 out["largest_id"] = int(task_id)
     return out
 
+def readlines():
+    with open("todos.txt", "r") as f:
+       out = f.readlines()
+    return out
+
 def main():
    
     print("Here are my todos:")
@@ -34,10 +39,8 @@ def main():
     elif user_input == "2":
         edit_todo = raw_input("Enter the todo you want to edit: ") + "\n"
         newedit_todo = raw_input("Write what you want to replace that with: ") + "\n"
-        
-        f = open("todos.txt", "r")
-        lines = f.readlines()
-        f.close()
+
+        lines = readlines()
 
         f = open("todos.txt", "w")
         for line in lines:
@@ -53,9 +56,7 @@ def main():
 
     else:
         delete_todo = raw_input("Enter which todo to delete: ") + "\n"
-        f = open("todos.txt", "r")
-        lines = f.readlines()
-        f.close()
+        lines = readlines()
 
         f = open("todos.txt", "w")
         for line in lines:
